@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation CSS</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .background img{
+            animation-iteration-count: infinite;
+            width: 600px;
+            height: 550px;
+            position: relative;
+            margin: 20px;
+        }
+
+        .female img{
+            animation-iteration-count: infinite;
+            width: 350px;
+            height: auto;
+            position: absolute;
+            top: 30px;
+            left: 50px;
+            animation-name: female;
+            animation-duration: 10s;  
+            opacity: 0;
+        }
+
+        @keyframes female {
+            0% { opacity: 0; }
+            5% { opacity: 0; }
+            10% { opacity: 1; }
+            30% {opacity:1;}
+            45% {opacity: 0; visibility: hidden;}
+            100% { opacity: 0; visibility: hidden;}
+        }
+        
+        .talent h1{
+            animation-iteration-count: infinite;
+            font-size: 40px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: absolute;
+            bottom: 100px;
+            left: 20px;
+            animation-name: talent;
+            animation-duration: 10s;  
+            opacity: 0;
+        }
+
+        .talent span{
+            color: rgb(157, 223, 58);
+        }
+
+        @keyframes talent {
+            0% { opacity: 0; }
+            10% { opacity: 0; }
+            25% { opacity: 0; }
+            30% { opacity: 0.5; left: 20px; }
+            35% {opacity:1; left: 100px;}
+            43% {opacity:0; left: 100px;}
+            45% {opacity: 0; visibility: hidden;}
+            100% { opacity: 0; visibility: hidden;}
+        }
+        
+        .headline2 h1{
+            animation-iteration-count: infinite;
+            position: absolute;
+            font-size: 40px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            top: 70px;
+            left: 300px;
+            /* left: 0px; */
+            animation-name: headline2;
+            animation-fill-mode: forwards;
+            animation-duration: 10s;  
+            opacity: 0;
+        }
+
+        @keyframes headline2 {
+            0% { opacity: 0; }
+            40% {opacity: 0;}
+            45% {opacity: 0;}
+            47% {opacity: 1; left: 300px;}
+            50% {opacity: 1; left:50px;}
+            100% { opacity: 1;left:50px;}
+        }
+
+        
+        .subheadline h1{
+            animation-iteration-count: infinite;
+            position: absolute;
+            font-size: 24px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            animation-name: subheadline;
+            animation-duration: 10s;  
+            animation-fill-mode: forwards;
+            /* animation-delay: 10s; */
+            opacity: 0;
+            width: 400px;
+        }
+
+        @keyframes subheadline {
+            0% { opacity: 0; }
+            40% {opacity: 0; }
+            60% {opacity: 0; }
+            65% {opacity: 1; left:280px; top: 220px;}
+            100% { opacity: 1;left:280px; top: 220px;}
+
+
+        }
+
+
+        .logo img{
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            position: absolute;
+            top: 10px;
+            left: 0px;
+            animation-name: logo;
+            animation-duration: 10s;  
+            animation-fill-mode: forwards;
+            opacity: 0;
+            width: 200px;
+            height: auto;
+        }
+
+        @keyframes logo {
+            0% { opacity: 0; }
+            65% {opacity: 0; }
+            75% {opacity: 0; }
+            80% {opacity: 0.5;left: 0px;}
+            85% { opacity: 1;left: 350px;}
+            100% { opacity: 1;left: 350px;}
+
+        }
+        
+        .learnmore img{
+            animation-iteration-count: infinite;
+            width: 300px;
+            height: auto;
+            position: absolute;
+            bottom: 150px;
+            left: 100px;
+            animation-name: learnmore;
+            animation-fill-mode: forwards;
+            animation-duration: 10s;  
+            opacity: 0;
+        }
+
+        @keyframes learnmore {
+            0% { opacity: 0; }
+            40% {opacity: 0; }
+            60% {opacity: 0;visibility: hidden;}
+            80% {opacity: 1;}
+            100% { opacity: 1;}
+        }
+
+        .replay img{
+            animation-iteration-count: infinite;
+            position: absolute;
+            bottom: 80px;
+            left: 180px;
+            animation-name: replay;
+            animation-duration: 10s;  
+            animation-fill-mode: forwards;
+            /* animation-delay: 10s; */
+            opacity: 0;
+            width: 150px;
+            height: auto;
+        }
+
+        @keyframes replay {
+            0% { opacity: 0; }
+            60% {opacity: 0; }
+            80% {opacity: 0; }
+            85% {opacity: 0.5; }
+            90% {opacity: 1; }
+            100% { opacity: 1;}
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+    <div class="background"><img src="./animation images/background.png" alt="background">
+        <div class="female"><img src="./animation images/female.png" alt="female"></div>
+        <div class="talent"><h1>We don't just teach code, <br>we produce top <br> <span>talent</span>. </h1></div>
+        <!-- <div class="headline2"><img src="./animation images/headline2.png" alt="headline2"></div> -->
+        <div class="headline2"><h1>Joining KODEGO <br> is easy. <br> Here's how:</h1></div>
+        <div class="learnmore"><img src="./animation images/learnmore.png" alt="learnmore"></div>
+        <div class="replay"><img src="./animation images/replay.png" alt="replay"></div>
+        <!-- <div class="subheadline"><img src="./animation images/subheadline.png" alt="subheadline"></div> -->
+        <div class="subheadline"><h1>1.Apply through our website. <br>2.Join our bootcamp.<br> 3. Get Employed. <br> 4. Pay only when hired.</h1></div>
+        <div class="logo"><img src="./animation images/logo.png" alt="kodego"></div>
+    </div>
+    </div>
+</body>
+</html>
