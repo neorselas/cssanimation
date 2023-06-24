@@ -13,7 +13,6 @@
         }
 
         .background img{
-            animation-iteration-count: infinite;
             width: 600px;
             height: 550px;
             position: relative;
@@ -21,7 +20,6 @@
         }
 
         .female img{
-            animation-iteration-count: infinite;
             width: 350px;
             height: auto;
             position: absolute;
@@ -42,7 +40,6 @@
         }
         
         .talent h1{
-            animation-iteration-count: infinite;
             font-size: 40px;
             color: white;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -70,7 +67,6 @@
         }
         
         .headline2 h1{
-            animation-iteration-count: infinite;
             position: absolute;
             font-size: 40px;
             color: white;
@@ -95,7 +91,6 @@
 
         
         .subheadline h1{
-            animation-iteration-count: infinite;
             position: absolute;
             font-size: 24px;
             color: white;
@@ -120,7 +115,6 @@
 
 
         .logo img{
-            animation-iteration-count: infinite;
             animation-timing-function: ease;
             position: absolute;
             top: 10px;
@@ -144,7 +138,6 @@
         }
         
         .learnmore img{
-            animation-iteration-count: infinite;
             width: 300px;
             height: auto;
             position: absolute;
@@ -165,7 +158,6 @@
         }
 
         .replay img{
-            animation-iteration-count: infinite;
             position: absolute;
             bottom: 80px;
             left: 180px;
@@ -197,11 +189,18 @@
         <!-- <div class="headline2"><img src="./animation images/headline2.png" alt="headline2"></div> -->
         <div class="headline2"><h1>Joining KODEGO <br> is easy. <br> Here's how:</h1></div>
         <div class="learnmore"><img src="./animation images/learnmore.png" alt="learnmore"></div>
-        <div class="replay"><img src="./animation images/replay.png" alt="replay"></div>
+        <div class="replay"><button onclick="reload()"><img src="./animation images/replay.png" alt="replay"></button></div>
         <!-- <div class="subheadline"><img src="./animation images/subheadline.png" alt="subheadline"></div> -->
         <div class="subheadline"><h1>1.Apply through our website. <br>2.Join our bootcamp.<br> 3. Get Employed. <br> 4. Pay only when hired.</h1></div>
-        <div class="logo"><img src="./animation images/logo.png" alt="kodego"></div>
+        <div class="logo"><img src="./animation images/logo.png" alt="kodego" onclick="reload"></div>
     </div>
     </div>
+
+    <script>
+        function reload(){
+            location.reload();
+        }
+        
+    </script>
 </body>
 </html>
